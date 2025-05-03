@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Users</h3>
+            <ul id="user-list"></ul>
+            <div class="nickname-input">
+                <input type="text" id="nickname" placeholder="Enter your nickname">
+                <button id="set-nickname-btn">Set Nickname</button>
+            </div>
+        </div>
+        <div class="chat-area">
+            <ul id="messages"></ul>
+            <div class="input-area">
+                <input type="text" id="message" placeholder="Type your message...">
+                <button id="send">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
